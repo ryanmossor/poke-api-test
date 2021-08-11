@@ -1,9 +1,9 @@
 let promises = [];
 const form = document.getElementById('form');
 
-const retrievePokemon = async(startingNumberofPokemon, numberOfPokemon) => {
+const retrievePokemon = async(startingNumberOfPokemon, numberOfPokemon) => {
     promises = [];
-    for (let i = startingNumberofPokemon; i <= numberOfPokemon; i++) {
+    for (let i = startingNumberOfPokemon; i <= numberOfPokemon; i++) {
         let response = await fetch(`https://pokeapi.co/api/v2/pokemon/${i}`);
         promises.push(await response.json());
     }
