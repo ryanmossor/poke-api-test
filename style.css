@@ -1,0 +1,64 @@
+html {
+	text-align: center;
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+	background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url("./img/bg.jpg");
+	/* background-attachment: fixed; */
+}
+
+.pokemon,
+#chooseGen {
+	border: 5px solid #eee;
+	/* border: 2px solid #45b3e0; */
+	max-width: 30%;
+	margin: auto;
+	margin-top: 10px;
+	background-color: rgba(238, 238, 238, 0.7);
+	/* background-color: rgba(135, 206, 235, 0.6); */
+	text-align: center;
+}
+
+#chooseGen {
+	font-weight: bold;
+	padding: 20px 0px;
+}
+
+/* #submit {
+	margin-left: 25px;
+	padding: 10px 25px;
+	background-color: #447ddd;
+	border: 0;
+	border-radius: 5px;
+	color: #fff;
+} */
+
+#submit {
+	color: #fff;
+	font-weight: bold;
+	background-color: #ee1515;
+	margin-left: 25px;
+	padding: 10px 30px;
+	border-radius: 5px;
+	border: 2px;
+	cursor: pointer;
+	transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+	transition-property: color, background-color;
+}
+
+#submit:hover {
+	background-color: #d61212;
+	color: #fff;
+	transition: 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+	transition-property: color, background-color;
+}
+
+.sprites {
+	margin: 5px;
+}
+
+.pokemon-name {
+	text-transform: capitalize;
+}
